@@ -19,11 +19,11 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
   const withdrawField = document.getElementById('withdraw-field');
   const newWithdrawAmountString = withdrawField.value;
   const newWithdrawAmount = parseFloat(newWithdrawAmountString);
-  
+
   // step-7
   withdrawField.value = '';
 
-  if(isNaN(newWithdrawAmount)){
+  if (isNaN(newWithdrawAmount)) {
     alert("Please provide a valid number")
     return;
   }
